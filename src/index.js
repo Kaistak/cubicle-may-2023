@@ -11,7 +11,7 @@ expresssConfig(app);
 handlebarsConfig(app);
 dbConnect()
     .then(() => console.log('Db Connected sucssesfully'))
-    .catch((err) => console.log('Db err', err))
+    .catch((err) => console.log('Db err', err.message))
 
 app.use(routes);
 
