@@ -6,6 +6,6 @@ const accessorySchema = new mongoose.Schema({
     imageUrl : String,
 });
 
-const Accessory = mongoose.model('Accessory', accessorySchema)
+const Accessory = mongoose.model('Accessory', accessorySchema);
 
 module.exports = Accessory;

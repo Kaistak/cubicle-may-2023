@@ -1,8 +1,9 @@
 const router = require('express').Router();
+
 const accessoryManager = require('../managers/accessoryManager');
 
 router.get('/create', (req, res) => {
-    res.render('accessory/create')
+    res.render('accessory/create');
 });
 
 router.post('/create', async (req, res) => {
@@ -12,4 +13,5 @@ router.post('/create', async (req, res) => {
 
     res.redirect('/');
 });
-module.exports = router
+
+module.exports = router;
